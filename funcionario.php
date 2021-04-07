@@ -1,9 +1,28 @@
 <?php
 class Funcionario {
-var $nomeFuncionario, $atividadeFuncionario;
-function trabalhar ($nome, $atividade) {
-echo "Nome: ".$nome . "Atividade: <b> " .$atividade . "</b>";
+private $nomeFuncionario;
+private $atividade;
+
+function __construct () {
+
 }
+
+function getNomeFuncionario () {
+return $this -> nomeFuncionario;
+}
+
+function setNomeFuncionario ($nome) {
+$this -> nomeFuncionario = $nome;
+}
+
+function getAtividade () {
+return $this -> atividade;
+}
+
+function setAtividade ($atividade) {
+$this -> atividade = $atividade;
+}
+
 
 }
 
